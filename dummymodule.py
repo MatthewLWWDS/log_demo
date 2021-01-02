@@ -31,7 +31,7 @@ def dm(*arg):
             'exception' : ex,
             'massage' : 'guess that no arguments are set.'
         })
-        a="dummy"
+        a="INSERTED_DUMMY"
 
     if type(a)!=str:
         logger.error({
