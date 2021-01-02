@@ -35,7 +35,7 @@ def dm(*arg):
         a="dummy"
 
     if type(a)!=str:
-        logger.warning({
+        logger.error({
             'a' : a,
             'action': 'cheking type',
             "name": __name__,
