@@ -30,7 +30,7 @@ def readconfig():
             'fileHandler' : {
                 'class' : 'logging.FileHandler',
                 'formatter' : 'sampleFormatter',
-                'filename' : 'loglog.log',
+                'filename' : 'samplelog.log',
                 'level' : logging.DEBUG
             }
         },
