@@ -29,8 +29,7 @@ def dm(*arg):
         logger.warning({
             'action': 'getarg',
             'exception' : ex,
-            'massage' : 'guess that no arguments are set.',
-            "name": __name__
+            'massage' : 'guess that no arguments are set.'
         })
         a="dummy"
 
@@ -38,7 +37,6 @@ def dm(*arg):
         logger.error({
             'a' : a,
             'action': 'cheking type',
-            "name": __name__,
             'massage' : 'a is not str. program is stopped.',
             'type(a)' : type(a)
         })
@@ -46,8 +44,7 @@ def dm(*arg):
 
     result=testfunc(a)
     logger.debug({
-            'a' : a,
-            "name": __name__,
+            'a' : a
         })
 
     return result

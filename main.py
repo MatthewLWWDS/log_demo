@@ -1,3 +1,7 @@
+"""
+demonstrate logging and exception
+"""
+
 import logging.config
 import time
 
@@ -12,17 +16,19 @@ if __name__=="__main__":
 
     print("="*3,"root")
     logging.critical({
-        'massage' : 'root:critical',
-        'name' : __name__})
+        'massage' : 'root:critical'})
     logging.warning({
-        'massage' : 'root:warning',
-        'name' : __name__}) 
+        'massage' : 'root:warning'}) 
     logging.debug({
-        'massage' : 'root:debug',
-        'name' : __name__}) 
+        'massage' : 'root:debug'}) 
     
     print("="*3,"logger(simpleExample)")
     dummymodule.dm("good") # no problem
+
+    def wrap(a):
+        return dummymodule.dm(a)
+    wrap("good_wrap")
+
     dummymodule.dm() # warning
     dummymodule.dm(3) # error and stop
 
