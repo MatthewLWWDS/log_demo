@@ -39,7 +39,7 @@ def dm(*arg):
             'a' : a,
             'action': 'cheking type',
             "name": __name__,
-            'massage' : 'a is not str. program is stopped.'
+            'massage' : 'a is not str. program is stopped.',
             'type(a)' : type(a)
         })
         raise O_NotString("arg[0] should be str")
